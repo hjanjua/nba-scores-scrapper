@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #TODO:
 # Add date after scoreboard/ to get scores for today
-# Identify the game in program and only get score if game is completed
+# Identify the game in progress and only get score if game is completed
 import requests
 import smtplib, re
 import datetime
