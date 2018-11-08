@@ -1,4 +1,7 @@
 #!/usr/bin/python
+#TODO:
+# Add date after scoreboard/ to get scores for today
+# Identify the game in program and only get score if game is completed
 import requests
 import smtplib, re
 import datetime
@@ -14,7 +17,7 @@ page = requests.get(url)
 soup = BeautifulSoup(page.text, 'html.parser')
 tables=soup.findAll("div", {"class": "in-progress-table section "})
 #print(table_)
-#table = soup.find('div', attrs={'class': 'in-progress-table section '})
+
 for table in tables:
     rows = table.findAll('tr')
     #print(rows)
